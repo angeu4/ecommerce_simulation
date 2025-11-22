@@ -14,8 +14,8 @@ from app.schemas import HealthResponse
 logger = get_logger(__name__)
 
 app = FastAPI(
-    title="Ecommerce simulation",
-    description="Ecommerce simulation",
+    title="ECommerce Simulation",
+    description="ECommerce Simulation",
     version="1.0.0",
     validate_response=True
 )
