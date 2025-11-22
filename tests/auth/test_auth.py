@@ -303,7 +303,7 @@ async def test_get_current_admin_api_key_success():
     result = await get_current_admin(
         req,
         creds=None,
-        x_api_key="admin-secret-key"  # MUST match .env.test
+        x_api_key="XXXXX"  # MUST match .env.test
     )
 
     assert result["api_key"] is True

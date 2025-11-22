@@ -1,2 +1,5 @@
 __pycache__
 .pytest_cache
+test_integration.db
+test.db
+.ruff_cache
