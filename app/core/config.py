@@ -11,6 +11,8 @@ class Settings(BaseSettings):
     ADMIN_SESSION_EXPIRE_SECONDS: int = Field(600, env="ADMIN_SESSION_EXPIRE_SECONDS")
     DISCOUNT_TTL_SECONDS: int = Field(300, env="DISCOUNT_TTL_SECONDS")
     NTH_ORDER: int = Field(5, env="NTH_ORDER")
+    
+    # should ideally be read from encrypted AWS Parameter store during runtime
     ADMIN_API_KEY: str = Field("admin-secret-key", env="ADMIN_API_KEY")
     RATE_LIMIT_REQUESTS: int = Field(100, env="RATE_LIMIT_REQUESTS")
     RATE_LIMIT_WINDOW_SECONDS: int = Field(60, env="RATE_LIMIT_WINDOW_SECONDS")
