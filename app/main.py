@@ -14,8 +14,8 @@ from app.schemas import HealthResponse
 logger = get_logger(__name__)
 
 app = FastAPI(
-    title="E Commerce simulation",
-    description="E Commerce simulation",
+    title="Ecommerce simulation",
+    description="Ecommerce simulation",
     version="1.0.0",
     validate_response=True
 )
@@ -45,16 +45,16 @@ async def on_startup():
     """
     Event handler for FastAPI startup event.
 
-    Logs a message when the HOEP backend is starting up and another message when it is complete.
+    Logs a message when the backend is starting up and another message when it is complete.
     Also creates the database and tables if they do not exist.
 
     :param None:
     :return None:
     """
     
-    logger.info("Starting HOEP backend...", extra={"request_id": REQUEST_ID_SYSTEM})
+    logger.info("Starting backend...", extra={"request_id": REQUEST_ID_SYSTEM})
     await create_db_and_tables()
-    logger.info("HOEP backend startup complete.", extra={"request_id": REQUEST_ID_SYSTEM})
+    logger.info("Backend startup complete.", extra={"request_id": REQUEST_ID_SYSTEM})
 
 
 # -------------------------

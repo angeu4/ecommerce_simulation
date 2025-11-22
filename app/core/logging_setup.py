@@ -15,7 +15,7 @@ DEFAULT_LOG_DIR = "/app/logs"
 
 # If pytest explicitly sets PYTEST_RUNNING, redirect logs to /tmp
 if os.environ.get("PYTEST_RUNNING") == "1":
-    LOG_DIR = os.path.join(tempfile.gettempdir(), "hoep_logs")
+    LOG_DIR = os.path.join(tempfile.gettempdir(), "ecommerce_simulation_logs")
 else:
     # Try the default directory, but fall back to /tmp if it's read-only
     try:
@@ -23,7 +23,7 @@ else:
         LOG_DIR = DEFAULT_LOG_DIR
     except OSError:
         # Read-only filesystem → fallback
-        LOG_DIR = os.path.join(tempfile.gettempdir(), "hoep_logs")
+        LOG_DIR = os.path.join(tempfile.gettempdir(), "ecommerce_simulation_logs")
 
 # ensuring the final log directory exists
 os.makedirs(LOG_DIR, exist_ok=True)
