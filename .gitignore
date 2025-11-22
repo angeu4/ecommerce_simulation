@@ -3,3 +3,4 @@ __pycache__
 test_integration.db
 test.db
 .ruff_cache
+app.log
