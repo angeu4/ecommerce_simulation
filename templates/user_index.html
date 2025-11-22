@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>User UI</title>
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="p-6">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl font-bold">User Demo UI (HTMX)</h2>
+      <div class="mt-4">
+        <form hx-post="/user/register" hx-target="#msg" hx-swap="innerHTML">
+          <input name="username" placeholder="username" class="border p-2"/>
+          <input name="password" placeholder="password" type="password" class="border p-2"/>
+          <button class="px-3 py-2 bg-green-600 text-white">Register</button>
+        </form>
+      </div>
+      <div id="msg" class="mt-4"></div>
+    </div>
+  </body>
+</html>
