@@ -10,7 +10,7 @@ The goal is to showcase clarity, correctness, reliability, and real-world engine
 ## API Flow Demonstration (Video)
 **End‑to‑end workflow:** User Registration → Login → Adding Items to Cart → Checkout → Logout
 
-<video src="./assets/api_flow_recording.mov"
+<video src="https://github.com/angeu4/ecommerce_simulation/blob/6f2ca72a6de05f7382bdb5cf071547d6162f7a7b/assets/api_flow_recording.mov"
        width="800"
        controls
        loop>
@@ -103,11 +103,11 @@ docker compose up --build
 ```
 
 ### Services:
-- API → http://localhost:8000  
-- FastAPI OpenAPI docs → http://localhost:8000/docs  
-- PostgreSQL → localhost:5432  
-- Redis → localhost:6379  
-- **Data completely destoyed on apps bootup to closely simulate an in-memory store, not persisted across bootups**
+- API → `http://localhost:8000`  
+- FastAPI OpenAPI docs → `http://localhost:8000/docs`  
+- PostgreSQL → `localhost:5432`  
+- Redis → `localhost:6379`  
+- **Data completely destoyed on app bootup to closely simulate an in-memory store, not persisted across bootups**
 
 ### **Postman Collection Included**
 ```
@@ -147,19 +147,20 @@ app/
 
 ### **ER Diagram**
 ![ER Diagram](./assets/er_diagram.png)
-**Data completely destoyed on apps bootup to closely simulate an in-memory store, not persisted across bootups**
+
+**Data completely destoyed on app bootup to closely simulate an in-memory store, not persisted across bootups**
 
 ### **PostgreSQL Overview**
 
 ![PostgreSQL Tables](./assets/postgresql_table_preview.png)
 Tables:
-- end_users  
-- admins  
-- items  
-- orders  
-- discount_codes  
-- tokens  
-- api_logs  
+- `end_users`
+- `admins`  
+- `items`  
+- `orders`  
+- `discount_codes`  
+- `tokens`  
+- `api_logs`  
 
 ### **Redis Key Structure**
 ![Redis Keys](./assets/redis_key_preview.png)
