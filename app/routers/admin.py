@@ -464,7 +464,7 @@ async def get_admin_summary(request: Request, admin=Depends(get_current_admin)):
                 OrderSummary(
                     order_urn=row[0],
                     subtotal=float(row[1]),
-                    discount=float(row[1] - row[2]),   # subtotal - total
+                    discount=float(row[1] - row[2]),
                     total=float(row[2]),
                     applied_discount_code=row[3],
                     items_fulfilled=row[4],
