@@ -10,7 +10,7 @@ The goal is to showcase clarity, correctness, reliability, and real-world engine
 ## API Flow Demonstration (Video)
 **End‑to‑end workflow:** User Registration → Login → Adding Items to Cart → Checkout → Logout
 
-<video src="https://github.com/angeu4/ecommerce_simulation/blob/6f2ca72a6de05f7382bdb5cf071547d6162f7a7b/assets/api_flow_recording.mov"
+<video src="https://github.com/angeu4/ecommerce_simulation/raw/refs/heads/development/assets/api_flow_recording.mov"
        width="800"
        controls
        loop>
