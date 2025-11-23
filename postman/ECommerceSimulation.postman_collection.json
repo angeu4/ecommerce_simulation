@@ -1,8 +1,8 @@
 {
 	"info": {
 		"_postman_id": "e2d5a125-d3b2-4f51-bc57-f427e467a346",
-		"name": "ECommerce Simulation",
-		"description": "Collection containing User and Admin APIs + misc endpoints for the HOEJ FastAPI assignment. Includes scripts to auto-extract tokens and discount codes into environment variables.",
+		"name": "ECommerceSimulation",
+		"description": "Collection containing User and Admin APIs + misc endpoints for the ECommerce Simulation assignment. Includes scripts to auto-extract tokens and discount codes into environment variables.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "10034381"
 	},
