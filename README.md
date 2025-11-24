@@ -97,16 +97,15 @@ The APIs interact with:
 
 ## Running the Application
 
-### **Start via Docker Compose**
-```sh
-docker compose up --build
-```
+- Clone the repository and `cd` to it via the Terminal
+- Start via Docker Compose: `docker compose up --build`
+- Trigger the APIs in the order mentioned above via Postman or any other REST client
 
 ### Services:
-- API → `http://localhost:8000`  
+- API Base URL → `http://localhost:8000`  
 - FastAPI OpenAPI docs → `http://localhost:8000/docs`  
-- PostgreSQL → `localhost:5432`  
-- Redis → `localhost:6379`  
+- PostgreSQL (accessible via `docker exec...` as well) → `localhost:5432`  
+- Redis (accessible via `docker exec...` as well) → `localhost:6379`  
 - **Data completely destoyed on app bootup to closely simulate an in-memory store, not persisted across bootups**
 
 ### **Postman Collection Included**
@@ -210,6 +209,9 @@ Includes:
 - Dependency overrides for isolated DB/Redis
 - Authentication tests  
 
+### **Pytest run**
+![Pytest run](./assets/pytest_run.png)
+
 ---
 
 ## Automated API Documentation
@@ -252,6 +254,7 @@ Could demonstrate:
 
 ### **Advanced Features**
 - Async worker queues
+- Propagating logs to Elastic Search for better tokenization and earier searching
 
 ---
 
